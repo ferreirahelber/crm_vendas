@@ -1,0 +1,6 @@
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+setup_admin.php
