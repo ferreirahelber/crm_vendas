@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include 'src/auth.php';
 checkAuth();
 
