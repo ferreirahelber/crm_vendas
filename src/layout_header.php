@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>IAFinanceCRM</title>
-
-    <!-- TailwindCSS -->
+    <title>CRM Vendas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -25,18 +23,13 @@
         }
     </script>
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icons (Material Design or similar via SVG in body, but linking a library helps if needed, strictly simple SVG used here) -->
-
-    <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#4F46E5">
     <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
 
     <style>
-        /* Custom scrollbar for premium feel */
         ::-webkit-scrollbar {
             width: 8px;
             height: 8px;
@@ -63,12 +56,11 @@
 
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans antialiased pb-20 md:pb-0">
 
-    <!-- Top Navigation (Desktop) -->
     <nav
         class="hidden md:flex bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700 px-6 py-4 justify-between items-center sticky top-0 z-50">
         <div class="flex items-center space-x-3">
-            <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">IA</div>
-            <span class="text-xl font-bold tracking-tight">IAFinance</span>
+            <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">CV</div>
+            <span class="text-xl font-bold tracking-tight">CRM Vendas</span>
         </div>
         <div class="flex items-center space-x-6">
             <a href="dashboard.php" class="hover:text-indigo-500 transition">Dashboard</a>
@@ -85,13 +77,12 @@
         </div>
     </nav>
 
-    <!-- Mobile Header -->
     <div class="md:hidden flex bg-white dark:bg-gray-800 shadow-sm p-4 justify-between items-center sticky top-0 z-50">
-        <span class="text-lg font-bold">IAFinance</span>
+        <span class="text-lg font-bold">CRM Vendas</span>
         <div class="flex space-x-3">
             <button onclick="toggleTheme()" class="text-xl">🌗</button>
             <a href="logout.php" class="text-red-500 font-medium">Sair</a>
         </div>
     </div>
 
-    <main class="max-w-7xl mx-auto p-4 md:p-6 lg:p-8 min-h-[calc(100vh-80px)]">
+    <main class="max-w-7xl mx-auto p-4 md:p-6 lg:p-8 min-h-[calc(100vh-80px)]"></main>

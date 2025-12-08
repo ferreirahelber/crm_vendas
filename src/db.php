@@ -2,14 +2,16 @@
 
 class Database
 {
-    private $host = 'sql207.ezyro.com';
-    private $db_name = 'ezyro_40614945_crmvendas';
-    private $username = 'ezyro_40614945'; // Ajuste conforme necessário
-    private $password = 'a4730c832ebb0';     // Ajuste conforme necessário
+    // Configuração para XAMPP Local
+    private $host = 'localhost';
+    private $db_name = 'ia_finance_crm'; // O nome exato que criaste no Passo 3
+    private $username = 'root';          // Usuário padrão do XAMPP
+    private $password = '';              // Senha padrão do XAMPP é vazia
     public $conn;
 
     public function getConnection()
     {
+
         $this->conn = null;
         try {
             $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
