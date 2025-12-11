@@ -4,7 +4,7 @@ class Database
 {
     // Configuração para XAMPP Local
     private $host = 'localhost';
-    private $db_name = 'ia_finance_crm'; // O nome exato que criaste no Passo 3
+    private $db_name = 'crmvendas'; // O nome exato que criaste no Passo 3
     private $username = 'root';          // Usuário padrão do XAMPP
     private $password = '';              // Senha padrão do XAMPP é vazia
     public $conn;
@@ -23,4 +23,3 @@ class Database
         return $this->conn;
     }
 }
-?>

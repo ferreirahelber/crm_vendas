@@ -85,4 +85,4 @@
         </div>
     </div>
 
-    <main class="max-w-7xl mx-auto p-4 md:p-6 lg:p-8 min-h-[calc(100vh-80px)]"></main>
+    <main class="max-w-7xl mx-auto p-4 md:p-6 lg:p-8 min-h-[calc(100vh-80px)]">
