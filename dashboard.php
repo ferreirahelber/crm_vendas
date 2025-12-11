@@ -2,7 +2,8 @@
 include 'src/auth.php';
 checkAuth();
 include 'src/layout_header.php';
-?><div class="space-y-6 animate-fade-in-up">
+?>
+<div class="space-y-6 animate-fade-in-up">
     <div class="flex justify-between items-center">
         <div>
             <h1 class="text-2xl font-bold text-gray-800 dark:text-white">
@@ -10,13 +11,13 @@ include 'src/layout_header.php';
             </h1>
             <p class="text-sm text-gray-500 dark:text-gray-400">Aqui está o resumo financeiro.</p>
         </div>
-        <div id="status-badge" class="hidden px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-sm">
+        <div id="status-badge" class="hidden px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wide shadow-sm">
             </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 relative overflow-hidden group">
-            <div class="absolute right-0 top-0 p-4 opacity-10 group-hover:opacity-20 transition">
+            <div class="absolute right-0 top-0 p-4 opacity-50 group-hover:opacity-20 transition">
                 <svg class="w-16 h-16 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path></svg>
             </div>
             <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Receitas</p>
@@ -24,7 +25,7 @@ include 'src/layout_header.php';
         </div>
 
         <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 relative overflow-hidden group">
-            <div class="absolute right-0 top-0 p-4 opacity-10 group-hover:opacity-20 transition">
+            <div class="absolute right-0 top-0 p-4 opacity-50 group-hover:opacity-20 transition">
                 <svg class="w-16 h-16 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 13l-5 5m0 0l-5-5m5 5V6"></path></svg>
             </div>
             <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Despesas</p>
@@ -32,11 +33,11 @@ include 'src/layout_header.php';
         </div>
 
         <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 relative overflow-hidden group">
-            <div class="absolute right-0 top-0 p-4 opacity-10 group-hover:opacity-20 transition">
+            <div class="absolute right-0 top-0 p-4 opacity-50 group-hover:opacity-20 transition">
                 <svg class="w-16 h-16 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Balanço Atual</p>
-                <h2 class="text-3xl font-bold text-gray-800 dark:text-white mt-1" id="total-saldo">R$ ...</h2>
             </div>
+            <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Balanço Atual</p>
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-white mt-1" id="total-saldo">R$ ...</h2>
         </div>
     </div>
 
